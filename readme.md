@@ -1,7 +1,3 @@
-
-
-
-
 # Grandmas Flowers
 <img width="900" alt="Screenshot 2023-08-11 at 12 45 34 AM" src="https://github.com/imalexlee/Grandmas-Flowers/assets/106715298/01cc88bb-42cf-4538-883f-e817471ea406">
 <img width="900" alt="Screenshot 2023-08-11 at 12 46 50 AM" src="https://github.com/imalexlee/Grandmas-Flowers/assets/106715298/b501c025-bff0-41bd-b6c9-4660f1796734">
@@ -30,11 +26,12 @@
 
 1. #### Replace the highlighted path with the path of YOUR mGBA.app location from the inside of the folder
 
-![Screenshot 2023-08-11 at 12 44 44 AM](https://github.com/imalexlee/Grandmas-Flowers/assets/106715298/3076bada-10f8-43a8-a77b-37477a94a87b)
+![Screenshot 2023-08-11 at 12 59 24 AM](https://github.com/imalexlee/Grandmas-Flowers/assets/106715298/0e71e1e3-fab1-4157-bbca-87a6273f838e)
 
 2. #### Instal Docker desktop and run the aaaronic/gba-compiler provided with the given dockerfile. The image MUST be running for game to work!
 
-3. #### **Build and Run** - Run `docker run --rm -it -v ${PWD}:/gba aaaronic/gba-compiler:1.2` in the project directory or press **cmd + shift + B** on Mac or **Ctrl + Shift + B** on Windows (If using Visual Studio Code)
+3. #### **Open mGBA** - Run `open <YOUR PATH TO MGBA.APP> ./Project.gba` in the project directory or skip this step if using Visual Studio Code when building
 
-4. #### **Clean** - Run `docker run --rm -it -v ${PWD}:/gba aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make clean'` in the project directory or go to Terminal>Run Task...>clean (If using Visual Studio Code)
+4. #### **Build and Run** - Run `docker run --rm -it -v ${PWD}:/gba aaaronic/gba-compiler:1.2` in the project directory or press **cmd + shift + B** on Mac or **Ctrl + Shift + B** on Windows (If using Visual Studio Code)
 
+5. #### **Clean** - Run `docker run --rm -it -v ${PWD}:/gba aaaronic/gba-compiler:1.2 bash -c 'cd /gba && make clean'` in the project directory or go to Terminal>Run Task...>clean (If using Visual Studio Code)
